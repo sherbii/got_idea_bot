@@ -4,7 +4,8 @@ from aiogram import Bot, Dispatcher, types, executor
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import pandas as pd
 
-API_TOKEN = "8070778295:AAFfnC-o627YmsQ3KohF-aOPUExiXnsx5sM"
+import os
+API_TOKEN = os.getenv("BOT_TOKEN")
 logging.basicConfig(level=logging.INFO)
 
 bot = Bot(token=API_TOKEN)
